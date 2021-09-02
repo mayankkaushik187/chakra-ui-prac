@@ -130,7 +130,8 @@ function ThirdPart() {
                         bgColor="brand.100"
                         border="1px"
                     />
-                    <Center textAlign="center">
+
+                    <Box>
                         <Textarea
                             ml="46px"
                             colorScheme="brand.50"
@@ -139,7 +140,7 @@ function ThirdPart() {
                             boxSize="md"
                             placeholder="Paragraph"
                         />
-                    </Center>
+                    </Box>
                 </Box>
             </Flex>
         </Box>
