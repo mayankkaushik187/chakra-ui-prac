@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
+import { ChakraProvider, extendTheme } from "@chakra-ui/react"
+import ExamForm from "./Components/ExamForm"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const theme = extendTheme({
+        colors: {
+            brand: {
+                100: "#733D47",
+                50: "#F2D8D5",
+                75: "#BF9B9B",
+            },
+        },
+    })
+    return (
+        <ChakraProvider theme={theme}>
+            <ExamForm />
+        </ChakraProvider>
+    )
 }
 
-export default App;
+export default App
