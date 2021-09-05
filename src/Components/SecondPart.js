@@ -32,6 +32,7 @@ import {
 import { TriangleDownIcon, AddIcon, CloseIcon } from "@chakra-ui/icons"
 
 function SecondPart() {
+    const handleClick = () => {}
     return (
         <Box
             w="863px"
@@ -93,7 +94,7 @@ function SecondPart() {
                             />
                         </Flex>
                     </InputGroup>
-                    <Flex flexDirection="row">
+                    <Flex flexDirection="row" onClick={handleClick}>
                         <IconButton
                             colorScheme="brand.50"
                             icon={<AddIcon color="brand.100" />}

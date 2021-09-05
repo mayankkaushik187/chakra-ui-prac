@@ -70,9 +70,6 @@ const ExamForm = () => {
             />
             <FirstPart />
             <SecondPart />
-            <ThirdPart />
-            <FourthPart />
-            <FifthPart />
         </Box>
     )
 }
